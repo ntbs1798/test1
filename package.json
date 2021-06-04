@@ -1,0 +1,14 @@
+{
+  "name": "Personal Portfolio",
+  "version": "0.0.1",
+  "description": "Assignment 1 Personal Portfolio",
+  "main": "index.js",
+  "author": "Sang Nguyen",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.0"
+  }
+}
