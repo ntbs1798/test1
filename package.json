@@ -1,7 +1,12 @@
 {
-  "name": "personal-portfolio",
-  "version": "0.0.0",
+  "name": "Personal-Portfolio",
+  "version": "0.0.1",
   "private": true,
+  "description": "Personal Portfolio for Assignment 1",
+  "main": "server.js",
+  "repository": "https://github.com/ntbs1798/Comp229-002-Assignment1.git",
+  "author": "Sang Nguyen",
+  "license": "MIT",
   "scripts": {
     "start": "node server.js"
   },
@@ -28,4 +33,5 @@
     "@types/morgan": "^1.9.2",
     "@types/node": "^15.12.0"
   }
+ 
 }
