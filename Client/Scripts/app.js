@@ -1,8 +1,8 @@
 "use strict";
 (function () {
-    function Start() {
-        console.log("App Started");
-    }
-    window.addEventListener("load", Start);
+    function clickToAbout() {
+        window.location.href="/about";
+      }
+      document.getElementById("btnToAboutMe").addEventListener("click", clickToAbout);
 })();
 //# sourceMappingURL=app.js.map
