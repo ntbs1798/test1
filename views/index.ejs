@@ -16,17 +16,10 @@
     <%- include('./components/header.ejs') %>
   </header>
 
-  <div class="container">
-    <h1>Welcome to the <%= title %> page</h1>
-  </div>
+  <!-- Main Content-->
+  
   <main>
-    <div class="high">
-      Some text go here
-    </div>
-    <div class="content">
-      Some more
-    </div>
-
+    <%- include('./content/' + page + '.ejs') %>
   </main>
 
   <!-- Bottom Nav -->
