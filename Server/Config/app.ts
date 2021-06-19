@@ -3,12 +3,23 @@ import express from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
+import mongoose  from 'mongoose';
 
 import indexRouter from '../Routes/index';
 
-
+//App Configuration
 const app = express();
 export default app;
+
+//DB configuration
+import * as DBConfig from "./db";
+mongoose.connect(DBConfig.LocalURI, {useNewUrlParser:true, useUnifiedTopology: true});
+
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error'));
+db.once('open', function(){
+  console.log(`Conected to MongoDB at: ${DBConfig.HostName}`);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, '../Views'));
