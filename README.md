@@ -1,3 +1,3 @@
-# Comp229-002-Assignment1
+# Comp229-002-Assignment2
 
 Assignment 2 - Authentication
