@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema; //Schema alias
 
 const ContactSchema = new Schema
 ({
     FullName: String,
-    EmalAddress: String,
+    EmailAddress: String,
     ContactNumber: String
 },
 {

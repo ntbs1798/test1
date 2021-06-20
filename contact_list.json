@@ -1,0 +1,15 @@
+{
+    "contacts":
+    [
+        {
+            "FullName": "Sang Nguyen",
+            "EmailAddress": "ntbs1798@gmail.com",
+            "ContactNumber": "6475624282"
+        },
+        {
+            "FullName": "Bruce Jay",
+            "EmailAddress": "brjay@gmail.com",
+            "ContactNumber": "1240912"
+       }
+    ]
+}
