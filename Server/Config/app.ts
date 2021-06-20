@@ -3,8 +3,10 @@ import express from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-import mongoose  from 'mongoose';
+import mongoose, {mongo}  from 'mongoose';
 
+
+//attach router files
 import indexRouter from '../Routes/index';
 import contactRouter from '../Routes/contact';
 

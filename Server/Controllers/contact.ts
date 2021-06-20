@@ -3,6 +3,9 @@ import express,{Request, Response, NextFunction} from 'express';
 // Contact Model Reference - db.clothing
 import Contact from "../Models/contact";
 
+// import Util Functions
+import { UserDisplayName} from '../Util';
+
 //(R)ead in CRUD
 export function DisplayContactListPage(req: Request, res: Response, next: NextFunction): void
 {
@@ -14,7 +17,7 @@ export function DisplayContactListPage(req: Request, res: Response, next: NextFu
         }
        
         //render the clothing-list content partial page
-        res.render('index',{title: 'Bussiness Contact List', page: 'contact-list', contacts: contactCollection})
+        res.render('index',{title: 'Bussiness Contact List', page: 'contact-list', contacts: contactCollection}, displayName: UserDisplayName(req) )
     });
 }
 
@@ -36,7 +39,7 @@ export function DisplayEditPage(req: Request, res: Response, next: NextFunction)
         }
 
         // show the edit view
-        res.render('index', { title: 'Edit', page: 'edit', item: contactItemToEdit  });
+        res.render('index', { title: 'Edit', page: 'edit', item: contactItemToEdit, displayName: UserDisplayName(req)   });
     });
 }
 
@@ -44,7 +47,7 @@ export function DisplayEditPage(req: Request, res: Response, next: NextFunction)
 export function DisplayAddPage(req: Request, res: Response, next: NextFunction): void
 {
     // show the edit view
-    res.render('index', { title: 'Add', page: 'edit', item: '' });
+    res.render('index', { title: 'Add', page: 'edit', item: '', displayName: UserDisplayName(req)  });
 }
 
 // Process Functions
