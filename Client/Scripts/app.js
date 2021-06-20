@@ -2,7 +2,7 @@
 (function () {
     function confirmDelete() {
         $("a.delete").on("click", function (event) {
-            if (!confirm("Are you sure?")) {
+            if (!confirm("Chắc chưa?")) {
                 event.preventDefault();
                 location.href = '/contact-list';
             }
