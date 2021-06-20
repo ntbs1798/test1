@@ -17,7 +17,7 @@ export function DisplayContactListPage(req: Request, res: Response, next: NextFu
         }
        
         //render the clothing-list content partial page
-        res.render('index',{title: 'Bussiness Contact List', page: 'contact-list', contacts: contactCollection}, displayName: UserDisplayName(req) )
+        res.render('index',{title: 'Bussiness Contact List', page: 'contact-list', contacts: contactCollection, displayName: UserDisplayName(req)} )
     });
 }
 
