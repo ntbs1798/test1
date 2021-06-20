@@ -8,13 +8,9 @@
             }
         });
     }
-    function clickToAbout() {
-        window.location.href = "/about";
-    }
     function Start() {
         confirmDelete();
     }
-    document.getElementById("btnToAboutMe").addEventListener("click", clickToAbout);
     window.addEventListener("load", Start);
 })();
 //# sourceMappingURL=app.js.map

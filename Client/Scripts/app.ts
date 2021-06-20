@@ -14,15 +14,12 @@
       });
     }
 
-    function clickToAbout(){
-      window.location.href="/about";
-    }
-
+    
     function Start(): void
     {
         confirmDelete();
     }
 
-    document.getElementById("btnToAboutMe").addEventListener("click", clickToAbout);
+    
     window.addEventListener("load", Start);
 })();
