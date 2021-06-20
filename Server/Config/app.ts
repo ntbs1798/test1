@@ -7,7 +7,6 @@ import mongoose  from 'mongoose';
 
 import indexRouter from '../Routes/index';
 import contactRouter from '../Routes/contact';
-import clothingRouter from '../Routes/clothing';
 
 //App Configuration
 const app = express();
@@ -37,7 +36,6 @@ app.use(express.static(path.join(__dirname, "../../node_modules")));
 
 //Routing happens now
 app.use('/', indexRouter);
-app.use('/clothing-list', clothingRouter);
 app.use('/contact-list', contactRouter); //Defines a new area of our website called contact-list
 
 // catch 404 and forward to error handler
