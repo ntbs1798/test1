@@ -144,7 +144,7 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.0.tgz#6a459d261450a300e6865faeddb5af01c3389bb3"
   integrity sha512-+aHJvoCsVhO2ZCuT4o5JtcPrCPyDE3+1nvbDprYes+pPkEsbjH7AGUCNtjMOXS0fqH14t+B7yLzaqSz92FPWyw==
 
-"@types/passport-local-mongoose@^4.0.14":
+"@types/passport-local-mongoose@^4.0.13":
   version "4.0.14"
   resolved "https://registry.yarnpkg.com/@types/passport-local-mongoose/-/passport-local-mongoose-4.0.14.tgz#11de85b01f6998e4ebc1bcc7500128f7e4d62a41"
   integrity sha512-EvaVpWw57tyOH3eJsZi+3YWv/8lMM79zd+3Wydak5BXBBoUSQTNvGQHt+P6vYR/k0z94TuezskhwelzO7no/AA==

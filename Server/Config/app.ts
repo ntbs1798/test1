@@ -8,6 +8,16 @@ import mongoose  from 'mongoose';
 import indexRouter from '../Routes/index';
 import contactRouter from '../Routes/contact';
 
+
+//modules for authentication
+import session from 'express-session';
+import passport from 'passport';
+import passportLocal from 'passport-local';
+
+//authentication objects
+let localStrategy = passportLocal.Strategy; //alias
+
+
 //App Configuration
 const app = express();
 export default app;
