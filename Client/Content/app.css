@@ -72,7 +72,8 @@ body
 {
     background-repeat: no-repeat;
     background: url("/Assets/images/tonight.jpg");
-    background-size: 47rem;
+    background-size: 100%;
+    margin: 5px;
 }
 
 nav
@@ -104,5 +105,5 @@ nav
   html {
     height: 100%;
     margin: 5px;
-    width: 95rem;
+    width: 100%;
   }
