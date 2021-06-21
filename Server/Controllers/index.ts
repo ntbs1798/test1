@@ -56,7 +56,7 @@ export function ProcessLoginPage(req:Request, res: Response, next: NextFunction)
         //are there login errors?
         if(!user)
         {
-            req.flash('loginMessage', 'Authentication Error');
+            req.flash('loginMessage', 'Có cái tài khoản cũng đéo nhớ thì làm chi ăn');
             return res.redirect('/login');
         }
         
@@ -101,9 +101,9 @@ export function ProcessRegisterPage(req:Request, res: Response, next: NextFuncti
             console.error('Error: Inserting New User');
             if(err.name == "UserExistsError")
             {
-                console.error('Error: User Already Exists');
+                console.error('Tên đăng nhập sử dụng rồi');
             }
-            req.flash('registerMessage', 'Registration Error');
+            req.flash('registerMessage', 'Lỗi đăng ký');
 
             return res.redirect('/register');
         }

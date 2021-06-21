@@ -41,7 +41,7 @@ function ProcessLoginPage(req, res, next) {
             return next(err);
         }
         if (!user) {
-            req.flash('loginMessage', 'Authentication Error');
+            req.flash('loginMessage', 'Có cái tài khoản cũng đéo nhớ thì làm chi ăn');
             return res.redirect('/login');
         }
         req.login(user, (err) => {
@@ -71,9 +71,9 @@ function ProcessRegisterPage(req, res, next) {
         if (err) {
             console.error('Error: Inserting New User');
             if (err.name == "UserExistsError") {
-                console.error('Error: User Already Exists');
+                console.error('Tên đăng nhập sử dụng rồi');
             }
-            req.flash('registerMessage', 'Registration Error');
+            req.flash('registerMessage', 'Lỗi đăng ký');
             return res.redirect('/register');
         }
         return passport_1.default.authenticate('local')(req, res, () => {
