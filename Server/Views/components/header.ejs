@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar bg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/home"><img src="/Assets/images/sangBet.png" alt="logo" height="45px" width="45px"></a>
+      <a class="navbar-brand" href="/home"><img src="/Assets/images/sangBet.png" alt="logo" height="30px" width="30px"></a>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -9,16 +10,16 @@
           
           <!-- Clothing List Secure area and Authentication Links -->
           <li class="nav-item">
-            <a class="nav-link" href="/contact-list"><i class="fas fa-dice"></i></i> <i class="fas fa-futbol"></i> Bet Nào</a>
+            <a class="nav-link" href="/contact-list" style="color: black;"><i class="fas fa-dice"></i></i> <i class="fas fa-futbol"></i> Bet Nào</a>
           </li>
 
           <% if(displayName) { %>
           <li class="nav-item">
-            <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt fa-lg"></i> Đăng xuất</a>
+            <a class="nav-link" href="/logout" style="color: black;"><i class="fas fa-sign-out-alt fa-lg"></i> Đăng xuất</a>
           </li>
           <% } else { %>
           <li class="nav-item">
-            <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt fa-lg"></i> Đăng nhập</a>
+            <a class="nav-link" href="/login" style="color: black;"><i class="fas fa-sign-in-alt fa-lg"></i> Đăng nhập</a>
           </li>
           <% } %>
           
