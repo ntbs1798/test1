@@ -71,15 +71,17 @@
 body
 {
     background-repeat: no-repeat;
-    background: url("/Assets/images/euro.png");
+    background: url("/Assets/images/bdnPhap.png");
     background-size: 100% 100%;
     margin: 5px;
+    
 }
 
 nav
 {
     opacity: 0.5;
 }
+
 
 .homePage .btn {
     position: absolute;
