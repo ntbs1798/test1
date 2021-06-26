@@ -1,3 +1,3 @@
-# Comp229-002-Assignment2
+# Comp229-002-SangBet
 
-Assignment 2 - Authentication
+SangBet
