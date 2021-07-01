@@ -68,13 +68,25 @@
 
 .main-content {margin-bottom: 65px}
 
-body
+body{
+    background-repeat: no-repeat;
+    background: url("/Assets/images/euro.jpg");
+    background-size: 100% 100%;
+    margin: 5px; 
+}
+body.contact-list
 {
     background-repeat: no-repeat;
-    background: url("/Assets/images/ducanh.jpg");
+    background: url("/Assets/images/TSvsTBN.jpg");
     background-size: 100% 100%;
     margin: 5px;
     
+}
+body.contact-list1{
+    background-repeat: no-repeat;
+    background: url("/Assets/images/biItal.jpg");
+    background-size: 100% 100%;
+    margin: 5px;
 }
 
 nav
@@ -106,6 +118,7 @@ nav
     
   }
 
+ 
   html {
     height: 100%;
     margin: 5px;

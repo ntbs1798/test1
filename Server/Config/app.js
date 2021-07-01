@@ -30,6 +30,7 @@ const morgan_1 = __importDefault(require("morgan"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const index_1 = __importDefault(require("../Routes/index"));
 const contact_1 = __importDefault(require("../Routes/contact"));
+const contact1_1 = __importDefault(require("../Routes/contact1"));
 const express_session_1 = __importDefault(require("express-session"));
 const passport_1 = __importDefault(require("passport"));
 const passport_local_1 = __importDefault(require("passport-local"));
@@ -68,6 +69,7 @@ passport_1.default.serializeUser(user_1.default.serializeUser());
 passport_1.default.deserializeUser(user_1.default.deserializeUser());
 app.use('/', index_1.default);
 app.use('/contact-list', contact_1.default);
+app.use('/contact-list1', contact1_1.default);
 app.use(function (req, res, next) {
     next(http_errors_1.default(404));
 });

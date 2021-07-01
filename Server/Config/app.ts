@@ -9,6 +9,7 @@ import mongoose, {mongo}  from 'mongoose';
 //attach router files
 import indexRouter from '../Routes/index';
 import contactRouter from '../Routes/contact';
+import contactRouter1 from '../Routes/contact1';
 
 
 //modules for authentication
@@ -78,6 +79,7 @@ passport.deserializeUser(User.deserializeUser());
 //Routing happens now
 app.use('/', indexRouter);
 app.use('/contact-list', contactRouter); //Defines a new area of our website called contact-list
+app.use('/contact-list1', contactRouter1);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
